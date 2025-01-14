@@ -1,0 +1,50 @@
+version: '3'
+
+services:
+  service-registry:
+    build:
+      context: ./service-registry
+    ports:
+      - "8761:8761"
+    networks:
+      - mynetwork
+
+  productservice:
+    build:
+      context: ./productservice
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:5432/productdb
+      - SPRING_DATASOURCE_USERNAME=admin
+      - SPRING_DATASOURCE_PASSWORD=admin
+    networks:
+      - mynetwork
+
+  orderservice:
+    build:
+      context: ./orderservice
+    ports:
+      - "8082:8082"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:5432/orderdb
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=postgres1234
+    networks:
+      - mynetwork
+
+  paymentservice:
+    build:
+      context: ./paymentservice
+    ports:
+      - "8081:8081"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:5432/paymentdb
+      - SPRING_DATASOURCE_USERNAME=admin1
+      - SPRING_DATASOURCE_PASSWORD=a1234
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge

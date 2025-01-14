@@ -1,0 +1,14 @@
+/* index.css or global styles */
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Global background color */
+}

@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../../.."
+		},
+		{
+			"path": "../../../../../../../../orderservice"
+		},
+		{
+			"path": "../../../../../../../../Product_catalog_service"
+		},
+		{
+			"path": "../../../../../../../../service-registry"
+		}
+	],
+	"settings": {
+		"java.compile.nullAnalysis.mode": "automatic",
+		"java.configuration.updateBuildConfiguration": "interactive"
+	}
+}
