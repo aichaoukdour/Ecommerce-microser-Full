@@ -12,7 +12,7 @@ https://github.com/user-attachments/assets/641a6675-19ab-4e35-9853-638e9b3be8bc
 ![1](https://github.com/user-attachments/assets/f15686e5-c3da-4396-b6bb-56aa131ba939)
 
 
-## user  FRontend
+## user  Frontend
 
 ![2](https://github.com/user-attachments/assets/52433894-02e6-4131-a87a-44fac4377e16)
 ![3](https://github.com/user-attachments/assets/8129f2bb-a5e9-454f-a6eb-b7973ce6da14)
